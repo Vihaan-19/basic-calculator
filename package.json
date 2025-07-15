@@ -1,1 +1,32 @@
- 
+{
+  "name": "digital-computation-device",
+  "version": "2.0.0",
+  "description": "A sophisticated computational interface with modern design and advanced mathematical capabilities",
+  "main": "calculator.html",
+  "scripts": {
+    "start": "open calculator.html",
+    "serve": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "calculator",
+    "computation",
+    "mathematics",
+    "web-app",
+    "es6",
+    "glassmorphism"
+  ],
+  "author": "Digital Innovation Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digital-innovation/computation-device.git"
+  },
+  "bugs": {
+    "url": "https://github.com/digital-innovation/computation-device/issues"
+  },
+  "homepage": "https://github.com/digital-innovation/computation-device#readme",
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
