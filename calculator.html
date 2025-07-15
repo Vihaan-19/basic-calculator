@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Computation Device</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="app-container">
+        <section class="compute-device" id="computeDevice">
+            <header class="device-header">
+                <h1 class="device-title">Digital Computer</h1>
+                <div class="header-controls">
+                    <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <div class="storage-status" id="storageStatus">
+                        <span class="storage-icon">💾</span>
+                        <span class="storage-value" id="storageValue">0</span>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="output-panel">
+                <div class="expression-display" id="expressionDisplay"></div>
+                <div class="result-display" id="resultDisplay">0</div>
+            </div>
+            
+            <!-- History Panel -->
+            <div class="history-panel" id="historyPanel">
+                <h3 class="history-title">Calculation History</h3>
+                <div class="history-list" id="historyList"></div>
+                <button class="history-clear" id="historyClear">Clear History</button>
+            </div>
+            
+            <div class="control-grid">
+                <!-- Storage Controls -->
+                <button class="control-btn storage-btn" data-action="storage-retrieve">RCL</button>
+                <button class="control-btn storage-btn" data-action="storage-save">STO</button>
+                <button class="control-btn storage-btn" data-action="storage-increase">S+</button>
+                <button class="control-btn storage-btn" data-action="storage-decrease">S-</button>
+                
+                <!-- System Controls -->
+                <button class="control-btn system-btn wide" data-action="reset">RESET</button>
+                <button class="control-btn operation-btn" data-action="root">²√</button>
+                <button class="control-btn operation-btn" data-action="percent">PCT</button>
+                
+                <!-- Mathematical Operations -->
+                <button class="control-btn operation-btn" data-action="divide">÷</button>
+                <button class="control-btn digit-btn" data-digit="7">7</button>
+                <button class="control-btn digit-btn" data-digit="8">8</button>
+                <button class="control-btn digit-btn" data-digit="9">9</button>
+                <button class="control-btn operation-btn" data-action="multiply">×</button>
+                
+                <button class="control-btn digit-btn" data-digit="4">4</button>
+                <button class="control-btn digit-btn" data-digit="5">5</button>
+                <button class="control-btn digit-btn" data-digit="6">6</button>
+                <button class="control-btn operation-btn" data-action="subtract">−</button>
+                
+                <button class="control-btn digit-btn" data-digit="1">1</button>
+                <button class="control-btn digit-btn" data-digit="2">2</button>
+                <button class="control-btn digit-btn" data-digit="3">3</button>
+                <button class="control-btn operation-btn" data-action="add">+</button>
+                
+                <button class="control-btn digit-btn" data-digit="0">0</button>
+                <button class="control-btn digit-btn" data-action="decimal">•</button>
+                <button class="control-btn execute-btn wide" data-action="execute">EXEC</button>
+                
+                <!-- Additional Row -->
+                <button class="control-btn special-btn" data-action="history">HIST</button>
+                <button class="control-btn special-btn" data-action="negate">+/−</button>
+                <button class="control-btn special-btn" data-action="square">x²</button>
+                <button class="control-btn special-btn" data-action="reciprocal">1/x</button>
+            </div>
+        </section>
+    </main>
+    
+    <script src="calculator.js" type="module"></script>
+</body>
+</html> 
